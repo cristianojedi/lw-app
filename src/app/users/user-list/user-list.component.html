@@ -1,0 +1,30 @@
+<div id="divList" class="animated flipInX">
+  <h3>Lean Usuários</h3>
+  <p *ngIf="users.length == 0">
+    <small>Não tem nenhum usuário cadastrado!</small>
+  </p>
+  <table *ngIf="users.length > 0">
+    <thead>
+      <tr>
+        <th>Nome Completo</th>
+        <th>E-mail</th>
+        <th>CPF</th>
+        <th>Telefone</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let user of users'>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.cpf }}</td>
+        <td>{{ user.phone }}</td>
+        <button (click)="onRemove(user)"><i class="fas fa-trash-alt"></i></button>
+      </tr>
+    </tbody>
+  </table>
+  <button class="button" (click)="onAddUser()">
+    <i class="fas fa-plus-circle"></i>
+    Novo Usuário
+  </button>
+</div>
