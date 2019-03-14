@@ -1,6 +1,10 @@
-# LwFrontend
+# LW-FRONTEND
 
 Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+
+## O APP ENCONTRA-SE PUBLICADO NO HEROKU
+
+Link App: https://lw-app.herokuapp.com/
 
 ## PASSOS PARA EXECUTAR O APP
 
